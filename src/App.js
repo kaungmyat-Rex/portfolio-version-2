@@ -150,11 +150,19 @@ function App() {
             <div className="mt-10 flex flex-col justify-center items-center">
               {" "}
               <div className="flex flex-row justify-center items-center">
-                <FiGithub className="text-2xl text-gray-500 m-5" />
-                <FiFacebook className="text-2xl text-gray-500 m-5" />
-                <FiInstagram className="text-2xl text-gray-500 m-5" />
+                <a href="https://github.com/kaungmyat-gusto">
+                  <FiGithub className="text-2xl text-gray-500 m-5" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100021177453532">
+                  <FiFacebook className="text-2xl text-gray-500 m-5" />
+                </a>
+                <a href="https://www.instagram.com/rex_kgmyat/">
+                  <FiInstagram className="text-2xl text-gray-500 m-5" />
+                </a>
                 <FiTwitter className="text-2xl text-gray-500 m-5" />
-                <FiLinkedin className="text-2xl text-gray-500 m-5" />
+                <a href="https://www.linkedin.com/in/kaung-myat-1027a9247/">
+                  <FiLinkedin className="text-2xl text-gray-500 m-5" />
+                </a>
               </div>
               <p className="font-mono text-blueEdit mt-14">
                 version 2.0.23.31122022
@@ -601,12 +609,16 @@ function App() {
                   <p className="font-primary text-white ml-3">Firebase</p>
                 </div>
                 <div className="flex flex-row mt-3 ">
-                  <AiFillGithub className="text-blueEdit text-4xl" />
+                  <a href="https://github.com/kaungmyat-gusto?tab=repositories">
+                    <AiFillGithub className="text-blueEdit text-4xl" />
+                  </a>
                   <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
                     <GrView className="font-semibold ml-2" />
-                    <p className="font-secondry font-semibold pl-1 pr-2 ">
-                      demo
-                    </p>
+                    <a href="https://pethannyunt.netlify.app/">
+                      <p className="font-secondry font-semibold pl-1 pr-2 ">
+                        demo
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -643,12 +655,16 @@ function App() {
                   <p className="font-primary text-white ml-3">Mongo Db</p>
                 </div>
                 <div className="flex flex-row mt-3 ">
-                  <AiFillGithub className="text-blueEdit text-4xl" />
+                  <a href="https://github.com/kaungmyat-gusto/phonebae-reviews">
+                    <AiFillGithub className="text-blueEdit text-4xl" />
+                  </a>
                   <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
                     <GrView className="font-semibold ml-2" />
-                    <p className="font-secondry font-semibold pl-1 pr-2 ">
-                      demo
-                    </p>
+                    <a href="https://phonebae-reviews.netlify.app/">
+                      <p className="font-secondry font-semibold pl-1 pr-2 ">
+                        demo
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -686,12 +702,18 @@ function App() {
                   <p className="font-primary text-white ml-3">Mongo Db</p>
                 </div>
                 <div className="flex flex-row mt-3 ">
-                  <AiFillGithub className="text-blueEdit text-4xl" />
+                  <a href="https://github.com/kaungmyat-gusto/WarTee-food-delivery">
+                    {" "}
+                    <AiFillGithub className="text-blueEdit text-4xl" />
+                  </a>
                   <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
                     <GrView className="font-semibold ml-2" />
-                    <p className="font-secondry font-semibold pl-1 pr-2 ">
-                      demo
-                    </p>
+
+                    <a href="https://wartee-fastfoods.netlify.app/">
+                      <p className="font-secondry font-semibold pl-1 pr-2 ">
+                        demo
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
