@@ -6,4 +6,6 @@ html,
 body {
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
+
+  background-color: #131b1e;
 }

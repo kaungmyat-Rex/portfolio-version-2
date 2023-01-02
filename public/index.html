@@ -37,10 +37,118 @@
       rel="stylesheet"
     />
     <title>Kaung Myat | Portfolio</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #131b1e;
+        transition: 500ms;
+      }
+      .logo-wrap {
+        width: 300px;
+        height: 300px;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 500ms;
+      }
+
+      .img {
+        position: absolute;
+        width: 150px;
+        object-fit: contain;
+        left: 74px;
+        top: 65px;
+        animation: logoRed 3s ease-in;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+      }
+
+      .imgb {
+        position: absolute;
+        width: 150px;
+        object-fit: contain;
+        z-index: 1;
+        left: 80px;
+        top: 65px;
+        animation: logoBlue 3s ease-in;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes logoBlue {
+        0% {
+          left: 80px;
+        }
+        15% {
+          left: 70px;
+        }
+        30% {
+          left: 80px;
+        }
+        45% {
+          top: 65px;
+        }
+        60% {
+          top: 75px;
+        }
+        75% {
+          top: 65px;
+        }
+        90% {
+          left: 80px;
+        }
+        100% {
+          left: 80px;
+        }
+      }
+
+      @keyframes logoRed {
+        0% {
+          left: 74px;
+        }
+        15% {
+          left: 90px;
+        }
+        30% {
+          left: 80px;
+        }
+        45% {
+          top: 65px;
+        }
+        60% {
+          top: 55px;
+        }
+        75% {
+          top: 65px;
+        }
+        90% {
+          left: 80px;
+        }
+        100% {
+          left: 74px;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="spinner" class="container">
+      <!-- <img class="img" src="/my-app/src/img/maintext.png" alt="" /> -->
+      <div class="logo-wrap">
+        <img class="img" src="/logoRed.png" alt="" />
+        <img class="imgb" src="/logoBlue.png" alt="" />
+      </div>
+    </div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
