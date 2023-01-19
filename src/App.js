@@ -223,7 +223,7 @@ function App() {
                 animate={{ opacity: 1, y: "0px" }}
                 transition={{ type: "spring", delay: 1.5, duration: 5 }}
               >
-                Developer who's code for money.
+                Developer who's code with art.
               </motion.p>
               <motion.p
                 className="font-secondry text-maintextcolor text-sm text-center font-bold mt-1 md:w-4/5 md:text-xl md:font-normal"
@@ -231,8 +231,8 @@ function App() {
                 animate={{ opacity: 1, y: "0px" }}
                 transition={{ type: "spring", delay: 2, duration: 5 }}
               >
-                Web Developer. Googler. Content Creator. Mommy Boy. Blink.
-                Member of Darkside.
+                Web Developer. Googler. Content Creator. Graphic Designer.
+                Coffee Lover. MERN Stack Developer.
               </motion.p>
               <motion.div
                 className="mt-20"
@@ -287,10 +287,10 @@ function App() {
                   </a>{" "}
                   sector.<br></br>
                   <br></br> So, here we are in 2022, and I am constantly
-                  studying and applying to all jobs at the junior level. So, if
-                  you require a developer for your project, please contact me. I
-                  would be delighted to assist you since it would allow me to
-                  improve my skills and knowledge.
+                  learning and looking for a remote or onsite Job opening
+                  position. So, if you require a developer for your project,
+                  please contact me. I would be delighted to assist you since it
+                  would allow me to improve my skills and knowledge.
                 </p>
               </div>
 
@@ -316,11 +316,12 @@ function App() {
                   Where'm I Expert?
                 </h3>
                 <p className="font-secondry text-white pt-5 pb-5 md:text-lg">
-                  Nothing! , Just copy , paste and design profitable and
-                  beautiful websites with the finest user experience and a clean
-                  style. I developed progressively and using best practices. My
-                  main area of experience right now is front-end web development
-                  with React JS, customized animation, and design.
+                  I designed profitable and beautiful websites with the finest
+                  user experience and a clean style. I developed progressively
+                  and using best practices. My main area of expertise right now
+                  is front-end web development with React JS, customized
+                  animation, design and back-end with NodeJs, ExpressJS,
+                  PassportJs and mongoDb.
                 </p>
                 <div className="flex flex-row flex-wrap justify-start">
                   <p
@@ -333,7 +334,7 @@ function App() {
                     Html
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="50"
                     data-test-user="215"
                     data-test-name="Css3"
@@ -342,7 +343,7 @@ function App() {
                     Css3
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="75"
                     data-test-user="240"
                     data-test-name="Javascript"
@@ -351,7 +352,7 @@ function App() {
                     Javascript
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="85"
                     data-test-user="256"
                     data-test-name="ReactJs"
@@ -360,7 +361,7 @@ function App() {
                     ReactJs
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="20"
                     data-test-user="149"
                     data-test-name="NodeJs"
@@ -369,7 +370,7 @@ function App() {
                     NodeJs
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="20"
                     data-test-user="149"
                     data-test-name="Express Js"
@@ -378,7 +379,7 @@ function App() {
                     ExpressJs
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="35"
                     data-test-user="198"
                     data-test-name="TypeScript"
@@ -387,7 +388,7 @@ function App() {
                     TS
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="50"
                     data-test-user="215"
                     data-test-name="Tailwind"
@@ -396,7 +397,7 @@ function App() {
                     Tailwind
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
                     data-test-id="20"
                     data-test-user="149"
                     data-test-name="MaterialUI"
@@ -405,22 +406,22 @@ function App() {
                     MaterialUi
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="100"
-                    data-test-user="280"
-                    data-test-name="JAV Actress"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    data-test-id="20"
+                    data-test-user="149"
+                    data-test-name="Framer motion"
                     onClick={(e) => mouseoverFun(e.target.dataset)}
                   >
-                    JAV xD
+                    Framer motion
                   </p>
                   <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit font-semibold border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="1"
-                    data-test-user="60"
-                    data-test-name="Conversation"
+                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                    data-test-id="75"
+                    data-test-user="240"
+                    data-test-name="MongoDb"
                     onClick={(e) => mouseoverFun(e.target.dataset)}
                   >
-                    Conversation with girls
+                    MongoDb
                   </p>
                 </div>
               </div>
@@ -705,10 +706,10 @@ function App() {
                     Wartee Food Delivery
                   </h3>
                   <p className="font-secondry text-white pt-5 pb-5 lg:bg-textbg lg:pl-7 lg:pr-7 lg:-ml-28 lg:text-navtextcolor lg:text-lg lg:rounded lg:shadow-md lg:mt-5 lg:mb-5 lg:z-10 ">
-                    The project you've seen is for pharmacy management. You can
-                    save your item price, data, and calculate the final price in
-                    a database. It includes a chud login API and the ability to
-                    print a coupon for your consumer.
+                    This project is built for delivery system.Customer can
+                    create orders and leave reviews.For website admin,Dashboard
+                    will be included to control CRUD operation and also have
+                    AUTH system with passportJs for security.
                   </p>
                   <div className="flex flex-row flex-wrap ">
                     <p className="font-primary text-white">ReactJs</p>
