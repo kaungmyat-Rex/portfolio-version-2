@@ -677,7 +677,7 @@ function App() {
                     </a>
                     <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
                       <GrView className="font-semibold ml-2" />
-                      <a href="https://phonebae-reviews.netlify.app/">
+                      <a href="https://phonebae-reviews.vercel.app/">
                         <p className="font-secondry font-semibold pl-1 pr-2 ">
                           demo
                         </p>
