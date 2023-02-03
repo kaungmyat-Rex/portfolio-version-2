@@ -34,7 +34,7 @@ const Footer = () => {
             Designed & built by Kaung Myat
           </p>
           <p className="font-mono text-sm text-blueEdit pt-2 pb-9">
-            ©2022 present , All rights reserved
+            ©2023 present , All rights reserved
           </p>
         </div>
       </div>

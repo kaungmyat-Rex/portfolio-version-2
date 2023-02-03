@@ -7,6 +7,7 @@ import { useState } from "react";
 import pjImg from "./img/ptn-img.jpg";
 import pjImg2 from "./img/phonebae.jpg";
 import pjImg3 from "./img/warteepf.jpg";
+import pjImg4 from "./img/travel.jpg";
 import { GrView } from "react-icons/gr";
 import { AiFillGithub } from "react-icons/ai";
 import Footer from "./component/Footer";
@@ -727,6 +728,50 @@ function App() {
                       <GrView className="font-semibold ml-2" />
 
                       <a href="https://wartee-fastfoods.netlify.app/">
+                        <p className="font-secondry font-semibold pl-1 pr-2 ">
+                          demo
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.div
+                className="flex flex-col justify-center items-center mt-16 lg:flex-row-reverse"
+                variants={scrollAnimation}
+                initial="offscreen"
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <div className="flex relative">
+                  <img
+                    className="rounded-lg border border-cyan-200 lg:border-none"
+                    src={pjImg4}
+                    alt="project"
+                  />
+                  <div className="hidden lg:block lg:absolute lg:bg-blueEdit lg:w-full lg:h-full lg:rounded-lg lg:opacity-30 lg:hover:opacity-0 lg:duration-300"></div>
+                </div>
+                <div className="flex flex-col justify-start mt-5 lg:items-start">
+                  <h3 className="font-secondry text-blueEdit text-3xl font-medium ">
+                    Travel Agency Asia
+                  </h3>
+                  <p className="font-secondry text-white pt-5 pb-5 lg:bg-textbg lg:pl-7 lg:pr-7 lg:-mr-28 lg:text-navtextcolor lg:text-lg lg:rounded lg:shadow-md lg:mt-5 lg:mb-5 lg:z-30 ">
+                    This project is the travel and tour agency which manages
+                    tour packages for travelling in Aisa. It’s a landing page
+                    which showcases the agency’s services, tour packages it
+                    offers, benefits, etc
+                  </p>
+                  <div className="flex flex-row flex-wrap ">
+                    <p className="font-primary text-white">ReactJs</p>
+                    <p className="font-primary text-white ml-3">Swiperjs</p>
+                  </div>
+                  <div className="flex flex-row mt-3 ">
+                    <a href="https://github.com/kaungmyat-gusto/Asia-travel-agency">
+                      <AiFillGithub className="text-blueEdit text-4xl" />
+                    </a>
+                    <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
+                      <GrView className="font-semibold ml-2" />
+                      <a href="https://travel-agency-asia.netlify.app/">
                         <p className="font-secondry font-semibold pl-1 pr-2 ">
                           demo
                         </p>
