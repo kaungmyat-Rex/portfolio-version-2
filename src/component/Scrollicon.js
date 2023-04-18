@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { IoIosArrowDropup } from "react-icons/io";
 
-const Scrollicon = () => {
+export const Scrollicon = () => {
   return (
     <div className=" w-9 h-16 border rounded-3xl relative">
       <motion.div
@@ -19,4 +20,14 @@ const Scrollicon = () => {
   );
 };
 
-export default Scrollicon;
+export const BackToTopBtn = () => {
+  const backtopFun = () => {
+    window.scrollTo(0, 0);
+  };
+  return (
+    <IoIosArrowDropup
+      onClick={() => backtopFun()}
+      className="p-3 fixed bg-btnNavColor border-2 border-navborder bottom-24 right-2 text-6xl text-navtextcolor rounded-full shadow-md hover:text-redEdit  sm:bottom-8 sm:right-5"
+    />
+  );
+};

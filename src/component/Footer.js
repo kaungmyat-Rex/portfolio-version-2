@@ -33,7 +33,7 @@ const Footer = () => {
           <p className="font-mono text-sm text-blueEdit pt-3">
             Designed & built by Kaung Myat
           </p>
-          <p className="font-mono text-sm text-blueEdit pt-2 pb-9">
+          <p className="font-mono text-sm text-blueEdit pt-2 pb-24 sm:pb-8">
             ©2023 present , All rights reserved
           </p>
         </div>

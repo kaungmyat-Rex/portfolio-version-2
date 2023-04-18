@@ -3,7 +3,7 @@ import Navbar from "./component/Navbar";
 import mainImag from "./img/maintext.png";
 import personImg from "./img/blackpantherblue.png";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import pjImg from "./img/ptn-img.jpg";
 import pjImg2 from "./img/phonebae.jpg";
 import pjImg3 from "./img/warteepf.jpg";
@@ -17,7 +17,8 @@ import { FiInstagram } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Scrollicon from "./component/Scrollicon";
+import { Scrollicon, BackToTopBtn } from "./component/Scrollicon";
+import ButtomNav from "./component/ButtomNav";
 
 const scrollAnimation = {
   offscreen: {
@@ -43,6 +44,12 @@ function App() {
   const [nav, setNav] = useState("");
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
+  const [active, setActive] = useState("");
+  const [hidebtn, sethidebtn] = useState(false);
+  const refAbout = useRef(null);
+  const refSkill = useRef(null);
+  const refWork = useRef(null);
+  const refContact = useRef(null);
 
   if (spinner) {
     setTimeout(() => {
@@ -82,11 +89,44 @@ function App() {
     clearInterval(deginterval);
   }
 
-  console.log("Hi");
-  console.log("let me guess, your are developer too");
-  console.log(
-    "website was built with React js , Tailwind css and Framer Motion"
-  );
+  // console.log("Hi");
+  // console.log("let me guess, your are developer too");
+  // console.log(
+  //   "website was built with React js , Tailwind css and Framer Motion"
+  // );
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutDiv = refAbout.current.offsetTop;
+      const skillDiv = refSkill.current.offsetTop;
+      const workDiv = refWork.current.offsetTop;
+      const contactDiv = refContact.current.offsetTop;
+      const scrollPosition = window.scrollY + 500;
+      if (scrollPosition <= aboutDiv) {
+        sethidebtn(false);
+      } else {
+        sethidebtn(true);
+      }
+
+      if (scrollPosition >= aboutDiv && scrollPosition < skillDiv) {
+        setActive("about");
+      } else if (scrollPosition >= skillDiv && scrollPosition < workDiv) {
+        setActive("skill");
+      } else if (scrollPosition >= workDiv && scrollPosition < contactDiv) {
+        setActive("work");
+      } else if (scrollPosition >= contactDiv) {
+        setActive("contact");
+      } else {
+        setActive("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     !loading && (
@@ -232,7 +272,7 @@ function App() {
                 animate={{ opacity: 1, y: "0px" }}
                 transition={{ type: "spring", delay: 2, duration: 5 }}
               >
-                Web Developer. Googler. Content Creator. Graphic Designer.
+                Web Developer. Googler. Content Creator. Creative Designer.
                 Coffee Lover. MERN Stack Developer.
               </motion.p>
               <motion.div
@@ -251,6 +291,7 @@ function App() {
         <div
           className="flex justify-center items-center pb-28 lg:pt-52 lg:pb-40"
           id="about"
+          ref={refAbout}
         >
           <motion.div
             className="w-11/12 h-auto lg:w-2/3"
@@ -279,7 +320,7 @@ function App() {
                   </a>{" "}
                   (Bsc (Hons) Computing).I'm not studying properly at that time
                   because of my young age and studentlife. And in 2019, when the
-                  Covid break out , I will begin self-study to learn the entire
+                  Covid break out , I will begin self-study to learn the entire{" "}
                   <a
                     className="text-blueEdit hover:text-redEdit"
                     href="https://www.google.com/search?sxsrf=ALiCzsb1IJeU4y_A9wcVVGZSjqSyFoSwxg:1672145937873&q=Web+development&si=AC1wQDDpGOot2oszezPNwprLIg5ABjqHZ3YIIcGrpvlRyk10Fl70cf7ItObbiIETq79fqVxspM9h3gX55vt9hvakdVkrkN55v87NC8fJs3nFhHsAegheIkh-qFlAPOh32HqZxqc05UAALWckn5fUs_B-q6OMlSb4zcS6ET_A3YURyM7MlUMHoG8%3D&sa=X&ved=2ahUKEwicuo6F7Zn8AhVbyjgGHW88CF8Q6RN6BAhEEAE&biw=1536&bih=792&dpr=1.25"
@@ -287,7 +328,7 @@ function App() {
                     web development
                   </a>{" "}
                   sector.<br></br>
-                  <br></br> So, here we are in 2022, and I am constantly
+                  <br></br> So, here we are in 2023, and I am constantly
                   learning and looking for a remote or onsite Job opening
                   position. So, if you require a developer for your project,
                   please contact me. I would be delighted to assist you since it
@@ -303,6 +344,7 @@ function App() {
         <div
           className="flex justify-center items-center pb-56 lg:pt-52"
           id="skill"
+          ref={refSkill}
         >
           <motion.div
             className="w-11/12 h-auto lg:w-2/3"
@@ -588,7 +630,11 @@ function App() {
         </div>
 
         {/* section project */}
-        <div className="flex justify-center items-center pt-50 pb-28" id="work">
+        <div
+          className="flex justify-center items-center pt-50 pb-28"
+          id="work"
+          ref={refWork}
+        >
           <div className="w-11/12 h-auto lg:w-2/3">
             <div className="flex flex-col justify-center items-center ">
               <h3 className="font-primary text-blueEdit text-titleFont lg:text-6xl lg:pb-5">
@@ -788,6 +834,7 @@ function App() {
         <div
           className="flex justify-center items-center pt-10 pb-40"
           id="contact"
+          ref={refContact}
         >
           <div className="w-11/12 h-auto md:w-2/3">
             <motion.div
@@ -826,6 +873,10 @@ function App() {
           </div>
         </div>
         <Footer />
+        <ButtomNav active={active} />
+        <div className={`${hidebtn ? "block" : "hidden"}`}>
+          <BackToTopBtn />{" "}
+        </div>
       </div>
     )
   );

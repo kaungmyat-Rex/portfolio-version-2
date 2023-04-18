@@ -19,6 +19,9 @@ module.exports = {
         pjtext: "#ccd6f7",
         navborder: "#1f2c31",
         texticonbg: "#285457",
+        btnNavColor: "#283a41",
+        btnNavColor1: "#12181c",
+        topBtn: "box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;",
       },
       fontSize: {
         titleFont: "45px",

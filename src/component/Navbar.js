@@ -41,11 +41,11 @@ const Navbar = ({ open, setOpen }) => {
     <div
       className={`bg-bgBlack fixed w-full h-20 z-50 ${
         scroll ? "-top-20 duration-300" : "top-0 duration-300"
-      } scroll-m-6`}
+      } scroll-m-6 hidden sm:block md:block`}
     >
       <div className="w-full h-full flex flex-row items-center justify-between">
         <img className="w-7 ml-6" src={logo} alt="logo" />
-        <div className="relative md:hidden">
+        <div className="relative lg:hidden">
           <div className="mr-3">
             <Hamburger
               color={`${open ? "#ee1d52" : "white"}`}
@@ -86,7 +86,7 @@ const Navbar = ({ open, setOpen }) => {
             </div>
           </div> */}
         </div>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <div className="flex flex-row ">
             <a href="#about">
               <motion.p
@@ -113,7 +113,7 @@ const Navbar = ({ open, setOpen }) => {
                   delay: 0.3,
                 }}
               >
-                Skill
+                Skills
               </motion.p>
             </a>
             <a href="#work">
