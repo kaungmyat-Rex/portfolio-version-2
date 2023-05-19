@@ -4,7 +4,7 @@ import mainImag from "./img/maintext.png";
 import personImg from "./img/blackpantherblue.png";
 
 import { useState, useRef, useEffect } from "react";
-import pjImg from "./img/ptn-img.jpg";
+import pjImg from "./img/MRML.jpg";
 import pjImg2 from "./img/phonebae.jpg";
 import pjImg3 from "./img/warteepf.jpg";
 import pjImg4 from "./img/travel.jpg";
@@ -273,7 +273,7 @@ function App() {
                 transition={{ type: "spring", delay: 2, duration: 5 }}
               >
                 Web Developer. Googler. Content Creator. Creative Designer.
-                Coffee Lover. MERN Stack Developer.
+                Coffee Lover. Front-end Developer.
               </motion.p>
               <motion.div
                 className="mt-20"
@@ -330,9 +330,9 @@ function App() {
                   sector.<br></br>
                   <br></br> So, here we are in 2023, and I am constantly
                   learning and looking for a remote or onsite Job opening
-                  position. So, if you require a developer for your project,
-                  please contact me. I would be delighted to assist you since it
-                  would allow me to improve my skills and knowledge.
+                  position. So, if you require a Frontend developer for your
+                  project, please contact me. I would be delighted to assist you
+                  since it would allow me to improve my skills and knowledge.
                 </p>
               </div>
 
@@ -363,8 +363,7 @@ function App() {
                   user experience and a clean style. I developed progressively
                   and using best practices. My main area of expertise right now
                   is front-end web development with React JS, customized
-                  animation, design and back-end with NodeJs, ExpressJS,
-                  PassportJs and mongoDb.
+                  animation, design and back-end is still learning in progess.
                 </p>
                 <div className="flex flex-row flex-wrap justify-start">
                   <p
@@ -660,16 +659,16 @@ function App() {
                     PTN Pharmacy
                   </h3>
                   <p className="font-secondry text-white pt-5 pb-5 lg:bg-textbg lg:pl-7 lg:pr-7 lg:-ml-28 lg:text-navtextcolor lg:text-lg lg:rounded lg:shadow-md lg:mt-5 lg:mb-5 lg:z-30 ">
-                    The project you've seen is for pharmacy management. You can
-                    save your item price, data, and calculate the final price in
-                    a database. It includes a chud login API and the ability to
-                    print a coupon for your consumer.
+                    The project you've seen is a movie review website with
+                    Burmese language. It's intended for movie fans who don't
+                    know what to watch or how to watch it. Provided by IMDB-API
+                    and translation-API. For the development environment, Vite
+                    and Tailwind Css is served!.
                   </p>
                   <div className="flex flex-row flex-wrap ">
                     <p className="font-primary text-white">ReactJs</p>
-                    <p className="font-primary text-white ml-3">Router</p>
-                    <p className="font-primary text-white ml-3">Material Ui</p>
-                    <p className="font-primary text-white ml-3">Firebase</p>
+                    <p className="font-primary text-white ml-3">Tailwind</p>
+                    <p className="font-primary text-white ml-3">Vite</p>
                   </div>
                   <div className="flex flex-row mt-3 ">
                     <a href="https://github.com/kaungmyat-gusto?tab=repositories">
@@ -677,7 +676,7 @@ function App() {
                     </a>
                     <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
                       <GrView className="font-semibold ml-2" />
-                      <a href="https://pethannyunt.netlify.app/">
+                      <a href="https://mrml.vercel.app/">
                         <p className="font-secondry font-semibold pl-1 pr-2 ">
                           demo
                         </p>
