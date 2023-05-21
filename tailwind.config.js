@@ -22,6 +22,7 @@ module.exports = {
         btnNavColor: "#283a41",
         btnNavColor1: "#12181c",
         topBtn: "box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;",
+        modelbg: "rgba(0, 0, 0, 0.5)",
       },
       fontSize: {
         titleFont: "45px",

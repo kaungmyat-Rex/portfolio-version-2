@@ -2,7 +2,6 @@ import "./App.css";
 import Navbar from "./component/Navbar";
 import mainImag from "./img/maintext.png";
 import personImg from "./img/blackpantherblue.png";
-
 import { useState, useRef, useEffect } from "react";
 import pjImg from "./img/MRML.jpg";
 import pjImg2 from "./img/phonebae.jpg";
@@ -19,6 +18,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { Scrollicon, BackToTopBtn } from "./component/Scrollicon";
 import ButtomNav from "./component/ButtomNav";
+import ImageModel from "./component/ImageModel";
 
 const scrollAnimation = {
   offscreen: {
@@ -46,6 +46,8 @@ function App() {
   const spinner = document.getElementById("spinner");
   const [active, setActive] = useState("");
   const [hidebtn, sethidebtn] = useState(false);
+  const [openModel, setOpenModel] = useState(false);
+  const [modelNumber, setModelNumber] = useState(1);
   const refAbout = useRef(null);
   const refSkill = useRef(null);
   const refWork = useRef(null);
@@ -94,6 +96,12 @@ function App() {
   // console.log(
   //   "website was built with React js , Tailwind css and Framer Motion"
   // );
+
+  const OpenModelFun = (dataset) => {
+    setModelNumber(Number(dataset.testId));
+    setOpenModel(true);
+    setOpen(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -224,6 +232,7 @@ function App() {
             </div>
           </div>
         </div>
+
         <div
           className="flex justify-center items-center pt-52 pb-80 duration-200"
           id="home"
@@ -286,6 +295,13 @@ function App() {
             </div>
           </div>
         </div>
+
+        <ImageModel
+          openModel={openModel}
+          setOpenModel={setOpenModel}
+          modelNumber={modelNumber}
+          setOpen={setOpen}
+        />
 
         {/* section-about */}
         <div
@@ -656,7 +672,7 @@ function App() {
                 </div>
                 <div className="flex flex-col justify-start mt-5 lg:justify-end lg:items-end">
                   <h3 className="font-secondry text-blueEdit text-3xl font-medium ">
-                    PTN Pharmacy
+                    MRML
                   </h3>
                   <p className="font-secondry text-white pt-5 pb-5 lg:bg-textbg lg:pl-7 lg:pr-7 lg:-ml-28 lg:text-navtextcolor lg:text-lg lg:rounded lg:shadow-md lg:mt-5 lg:mb-5 lg:z-30 ">
                     The project you've seen is a movie review website with
@@ -671,6 +687,13 @@ function App() {
                     <p className="font-primary text-white ml-3">Vite</p>
                   </div>
                   <div className="flex flex-row mt-3 ">
+                    <p
+                      className="text-base text-blueEdit mr-2 cursor-pointer border-2 border-blueEdit rounded-lg pt-1 pr-2 pl-2"
+                      data-test-id="1"
+                      onClick={(e) => OpenModelFun(e.target.dataset)}
+                    >
+                      Gallary
+                    </p>
                     <a href="https://github.com/kaungmyat-gusto?tab=repositories">
                       <AiFillGithub className="text-blueEdit text-4xl" />
                     </a>
@@ -718,6 +741,13 @@ function App() {
                     <p className="font-primary text-white ml-3">Mongo Db</p>
                   </div>
                   <div className="flex flex-row mt-3 ">
+                    <p
+                      className="text-base text-blueEdit mr-2 cursor-pointer border-2 border-blueEdit rounded-lg pt-1 pr-2 pl-2"
+                      data-test-id="2"
+                      onClick={(e) => OpenModelFun(e.target.dataset)}
+                    >
+                      Gallary
+                    </p>
                     <a href="https://github.com/kaungmyat-gusto/phonebae-reviews">
                       <AiFillGithub className="text-blueEdit text-4xl" />
                     </a>
@@ -765,6 +795,13 @@ function App() {
                     <p className="font-primary text-white ml-3">Mongo Db</p>
                   </div>
                   <div className="flex flex-row mt-3 ">
+                    <p
+                      className="text-base text-blueEdit mr-2 cursor-pointer border-2 border-blueEdit rounded-lg pt-1 pr-2 pl-2"
+                      data-test-id="3"
+                      onClick={(e) => OpenModelFun(e.target.dataset)}
+                    >
+                      Gallary
+                    </p>
                     <a href="https://github.com/kaungmyat-gusto/WarTee-food-delivery">
                       {" "}
                       <AiFillGithub className="text-blueEdit text-4xl" />
