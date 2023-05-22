@@ -809,7 +809,7 @@ function App() {
                     <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
                       <GrView className="font-semibold ml-2" />
 
-                      <a href="https://wartee-fastfoods.netlify.app/">
+                      <a href="https://wartee-fastfoods.vercel.app/">
                         <p className="font-secondry font-semibold pl-1 pr-2 ">
                           demo
                         </p>

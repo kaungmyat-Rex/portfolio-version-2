@@ -9,7 +9,9 @@ import warteepf from "../img/warteepf.jpg";
 import warteelp from "../img/wartee-lp.jpg";
 import warteeph from "../img/wartee-ph.jpg";
 import warteeph2 from "../img/wartee-ph2.jpg";
-
+import warteeadmin from "../img/wartee-admin.jpg";
+import warteeadminadd from "../img/wartee-admin-add.jpg";
+import warteelogin from "../img/wartee-login.jpg";
 export const ProjectImgList = [
   {
     id: 1,
@@ -21,6 +23,14 @@ export const ProjectImgList = [
   },
   {
     id: 3,
-    img: [warteepf, warteelp, warteeph, warteeph2],
+    img: [
+      warteepf,
+      warteelp,
+      warteeph,
+      warteeph2,
+      warteeadmin,
+      warteeadminadd,
+      warteelogin,
+    ],
   },
 ];
