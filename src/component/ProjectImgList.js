@@ -1,5 +1,5 @@
 import MRML from "../img/MRML.jpg";
-import MRMLhome from "../img/MRML-home.png";
+import MRMLhome from "../img/MRML-home.jpg";
 import MRMLlp from "../img/MRML-lp.jpg";
 import MRMLph from "../img/MRML-ph.jpg";
 import phonebae from "../img/phonebae.jpg";

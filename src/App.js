@@ -678,13 +678,13 @@ function App() {
                     The project you've seen is a movie review website with
                     Burmese language. It's intended for movie fans who don't
                     know what to watch or how to watch it. Provided by IMDB-API
-                    and translation-API. For the development environment, Vite
+                    and translation-API. For the development environment, NextJS
                     and Tailwind Css is served!.
                   </p>
                   <div className="flex flex-row flex-wrap ">
-                    <p className="font-primary text-white">ReactJs</p>
+                    <p className="font-primary text-white">NextJs</p>
                     <p className="font-primary text-white ml-3">Tailwind</p>
-                    <p className="font-primary text-white ml-3">Vite</p>
+                    <p className="font-primary text-white ml-3">Tmdb api</p>
                   </div>
                   <div className="flex flex-row mt-3 ">
                     <p
@@ -694,7 +694,7 @@ function App() {
                     >
                       Gallary
                     </p>
-                    <a href="https://github.com/kaungmyat-gusto?tab=repositories">
+                    <a href="https://github.com/kaungmyat-gusto/nextjs-movie-v2">
                       <AiFillGithub className="text-blueEdit text-4xl" />
                     </a>
                     <div className="flex flex-row bg-blueEdit rounded-lg justify-center items-center ml-2">
