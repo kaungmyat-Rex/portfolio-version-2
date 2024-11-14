@@ -12,6 +12,12 @@ import warteeph2 from "../img/wartee-ph2.jpg";
 import warteeadmin from "../img/wartee-admin.jpg";
 import warteeadminadd from "../img/wartee-admin-add.jpg";
 import warteelogin from "../img/wartee-login.jpg";
+import ultimate1 from "../img/ultimateGy1.jpg";
+import ultimate2 from "../img/ultimateGy2.jpg";
+import ultimate3 from "../img/ultimateGy3.jpg";
+import ultimate4 from "../img/ultimateGy4.jpg";
+import ultimate5 from "../img/ultimateGy5.jpg";
+import ultimate6 from "../img/ultimateGy6.jpg";
 export const ProjectImgList = [
   {
     id: 1,
@@ -32,5 +38,9 @@ export const ProjectImgList = [
       warteeadminadd,
       warteelogin,
     ],
+  },
+  {
+    id: 4,
+    img: [ultimate1, ultimate2, ultimate3, ultimate4, ultimate5, ultimate6],
   },
 ];

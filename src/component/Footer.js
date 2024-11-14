@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="w-11/12 h-auto">
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-row justify-center items-center">
-            <a href="https://github.com/kaungmyat-gusto">
+            <a href="https://github.com/kaungmyat-Rex">
               <FiGithub className="text-2xl text-gray-500 m-5 hover:text-redEdit duration-200 cursor-pointer" />
             </a>
             <a href="https://www.facebook.com/profile.php?id=100021177453532">
@@ -34,7 +34,7 @@ const Footer = () => {
             Designed & built by Kaung Myat
           </p>
           <p className="font-mono text-sm text-blueEdit pt-2 pb-24 sm:pb-8">
-            ©2023 present , All rights reserved
+            ©2024 present , All rights reserved
           </p>
         </div>
       </div>
