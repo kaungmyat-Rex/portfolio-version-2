@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./component/Navbar";
 import mainImag from "./img/maintext.png";
-import personImg from "./img/blackpantherblue.png";
 import { useState, useRef, useEffect } from "react";
 import pjImg from "./img/MRML.jpg";
 import pjImg2 from "./img/phonebae.jpg";
@@ -22,19 +21,9 @@ import { motion } from "framer-motion";
 import { Scrollicon, BackToTopBtn } from "./component/Scrollicon";
 import ButtomNav from "./component/ButtomNav";
 import ImageModel from "./component/ImageModel";
-import Journy from "./component/Journy";
-
-const scrollAnimation = {
-  offscreen: {
-    y: "50px",
-    opacity: 0,
-  },
-  onscreen: {
-    y: "0px",
-    opacity: 1,
-    transition: { type: "spring", bounce: 0, duration: 2 },
-  },
-};
+import { scrollAnimation } from "./component/ScrollAnimation";
+import AboutSection from "./component/AboutSection";
+import { elements } from "./component/SkillsetList";
 
 function App() {
   const [data, setData] = useState("");
@@ -307,46 +296,7 @@ function App() {
           id="about"
           ref={refAbout}
         >
-          <motion.div
-            className="w-11/12 h-auto lg:w-2/3"
-            variants={scrollAnimation}
-            initial="offscreen"
-            whileInView={"onscreen"}
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <div className="flex flex-col justify-center items-center md:flex-row">
-              <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
-                <motion.h3
-                  className="relative font-primary text-blueEdit text-titleFont z-10 lg:text-6xl lg:pb-5"
-                  variants={scrollAnimation}
-                >
-                  Me, Myself and I
-                </motion.h3>
-                <p className="font-secondry text-white pt-5 pb-5 md:text-lg">
-                  Hello, my name is Aung Kaung Myat. I’m a developer with a
-                  passion for
-                  <a
-                    className="text-blueEdit hover:text-redEdit"
-                    href="https://www.google.com/search?sxsrf=ALiCzsb1IJeU4y_A9wcVVGZSjqSyFoSwxg:1672145937873&q=Web+development&si=AC1wQDDpGOot2oszezPNwprLIg5ABjqHZ3YIIcGrpvlRyk10Fl70cf7ItObbiIETq79fqVxspM9h3gX55vt9hvakdVkrkN55v87NC8fJs3nFhHsAegheIkh-qFlAPOh32HqZxqc05UAALWckn5fUs_B-q6OMlSb4zcS6ET_A3YURyM7MlUMHoG8%3D&sa=X&ved=2ahUKEwicuo6F7Zn8AhVbyjgGHW88CF8Q6RN6BAhEEAE&biw=1536&bih=792&dpr=1.25"
-                  >
-                    {" "}
-                    web development.{" "}
-                  </a>
-                  Initially, I explored web development casually, but over time,
-                  I became more serious about honing my skills and fully
-                  immersing myself in the field. I am continuously learning and
-                  actively seeking remote or onsite job opportunities. If you
-                  need a frontend developer for your project, please feel free
-                  to contact me. I would be delighted to assist, as it would
-                  provide me with the opportunity to further develop my skills
-                  and knowledge.
-                </p>
-                <Journy />
-              </div>
-
-              <img className="w-96 sm:w-96" src={personImg} alt="" />
-            </div>
-          </motion.div>
+          <AboutSection />
         </div>
         {/* section skill and exp */}
         <div
@@ -380,140 +330,23 @@ function App() {
                   am also actively learning back-end development.
                 </p>
                 <div className="flex flex-row flex-wrap justify-start">
-                  <p
-                    className="font-mono text-lg text-blueEdit border-2 border-blueEdit rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="30"
-                    data-test-user="180"
-                    data-test-name="Html"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    Html
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="50"
-                    data-test-user="215"
-                    data-test-name="Css3"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    Css3
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="75"
-                    data-test-user="240"
-                    data-test-name="Javascript"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    Javascript
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="85"
-                    data-test-user="256"
-                    data-test-name="ReactJs"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    ReactJs
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="20"
-                    data-test-user="149"
-                    data-test-name="NodeJs"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    NodeJs
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="20"
-                    data-test-user="149"
-                    data-test-name="Express Js"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    ExpressJs
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="75"
-                    data-test-user="240"
-                    data-test-name="Next Js"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    NextJs
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="35"
-                    data-test-user="198"
-                    data-test-name="TypeScript"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    TS
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="50"
-                    data-test-user="215"
-                    data-test-name="React Native"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    React Native
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="50"
-                    data-test-user="215"
-                    data-test-name="Tailwind"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    Tailwind
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="20"
-                    data-test-user="149"
-                    data-test-name="MaterialUI"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    MaterialUi
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="20"
-                    data-test-user="149"
-                    data-test-name="Framer motion"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    Framer motion
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="75"
-                    data-test-user="240"
-                    data-test-name="MongoDb"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    MongoDb
-                  </p>
-                  <p
-                    className="font-mono text-lg text-blueEdit border-blueEdit border-2 rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
-                    data-test-id="75"
-                    data-test-user="240"
-                    data-test-name="Github"
-                    onClick={(e) => mouseoverFun(e.target.dataset)}
-                  >
-                    Git
-                  </p>
+                  {elements.map((element) => {
+                    return (
+                      <p
+                        key={element.id + element.user + element.name}
+                        className="font-mono text-lg text-blueEdit border-2 border-blueEdit rounded-sm pl-4 pr-4 m-1 hover:bg-texticonbg cursor-pointer"
+                        data-test-id={element.id}
+                        data-test-user={element.user}
+                        data-test-name={element.name}
+                        onClick={(e) => mouseoverFun(e.target.dataset)}
+                      >
+                        {element.label}
+                      </p>
+                    );
+                  })}
                 </div>
               </div>
               <div className="flex mt-48 relative md:mt-20 md:ml-44 lg:ml-56">
-                {/* <img
-                  className="w-[300px] h-[300px] absolute -left-10 top-0"
-                  src={arrow}
-                  alt="arrow"
-                /> */}
                 <div
                   style={{
                     position: "relative",

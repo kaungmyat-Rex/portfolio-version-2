@@ -1,0 +1,16 @@
+export const elements = [
+  { id: 30, user: 180, name: "Html", label: "Html" },
+  { id: 50, user: 215, name: "Css3", label: "Css3" },
+  { id: 75, user: 240, name: "Javascript", label: "Javascript" },
+  { id: 85, user: 256, name: "ReactJs", label: "ReactJs" },
+  { id: 20, user: 149, name: "NodeJs", label: "NodeJs" },
+  { id: 20, user: 149, name: "Express Js", label: "ExpressJs" },
+  { id: 75, user: 240, name: "Next Js", label: "NextJs" },
+  { id: 35, user: 198, name: "TypeScript", label: "TS" },
+  { id: 50, user: 215, name: "React Native", label: "React Native" },
+  { id: 50, user: 215, name: "Tailwind", label: "Tailwind" },
+  { id: 20, user: 149, name: "MaterialUI", label: "MaterialUi" },
+  { id: 20, user: 149, name: "Framer motion", label: "Framer motion" },
+  { id: 75, user: 240, name: "MongoDb", label: "MongoDb" },
+  { id: 75, user: 240, name: "Github", label: "Git" },
+];
