@@ -896,7 +896,7 @@ function App() {
                 </p>
                 <p className="font-secondry text-white mt-2">
                   <span className="text-blueEdit">Phone</span> - +65
-                  09-971569482 / +66 637410803
+                  09-971569482 (Myanmar) / +66 637410803 (Thai)
                 </p>
               </div>
               <a href="mailto:aungakm667@gmail.com">

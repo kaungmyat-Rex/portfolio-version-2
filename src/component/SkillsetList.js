@@ -13,4 +13,6 @@ export const elements = [
   { id: 20, user: 149, name: "Framer motion", label: "Framer motion" },
   { id: 75, user: 240, name: "MongoDb", label: "MongoDb" },
   { id: 75, user: 240, name: "Github", label: "Git" },
+  { id: 50, user: 215, name: "UiUx", label: "UiUx" },
+  { id: 50, user: 215, name: "Figma", label: "Figma" },
 ];

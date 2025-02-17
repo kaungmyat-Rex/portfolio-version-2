@@ -65,12 +65,12 @@ const AboutSection = () => {
             dragConstraints={constraintsRef}
             src={spiderman}
           /> */}
-          <motion.img
+          {/* <motion.img
             className="w-44 h-44 object-contain absolute -top-5 left-[53%] -translate-x-[50%]"
             drag
             dragConstraints={constraintsRef}
             src={ironman}
-          />
+          /> */}
         </motion.div>
         {/* <img
           ref={constraintsRef}
