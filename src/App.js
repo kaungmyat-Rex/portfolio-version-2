@@ -8,6 +8,7 @@ import pjImg3 from "./img/warteepf.jpg";
 import pjImg4 from "./img/travel.jpg";
 import pjImg5 from "./img/bsc.jpg";
 import pjImg6 from "./img/ultimatemain.jpg";
+import pjImg7 from "./img/bayhtoke1.jpg";
 import arrow from "./img/arrow.png";
 import { GrView } from "react-icons/gr";
 import { AiFillGithub } from "react-icons/ai";
@@ -527,6 +528,62 @@ function App() {
               <h3 className="font-primary text-blueEdit text-titleFont lg:text-6xl lg:pb-5">
                 My Projects
               </h3>
+              <motion.div
+                className="flex flex-col justify-center items-center mt-16 lg:flex-row-reverse"
+                variants={scrollAnimation}
+                initial="offscreen"
+                whileInView={"onscreen"}
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <div className="flex relative lg:hover:scale-110 lg:hover:z-50 lg:duration-300">
+                  <img
+                    className="rounded-lg border border-cyan-200 lg:border-none"
+                    src={pjImg7}
+                    alt="project7"
+                  />
+                  <div className="hidden lg:block lg:absolute lg:bg-blueEdit lg:w-full lg:h-full lg:rounded-lg lg:opacity-30 lg:hover:opacity-0 lg:duration-300"></div>
+                </div>
+                <div className="flex flex-col justify-start mt-5 lg:items-start">
+                  <h3 className="font-secondry text-blueEdit text-3xl font-medium ">
+                    BayHtoke Courses
+                  </h3>
+                  <p className="font-secondry text-white pt-5 pb-5 lg:bg-textbg lg:pl-7 lg:pr-7 lg:-mr-28 lg:text-navtextcolor lg:text-lg lg:rounded lg:shadow-md lg:mt-5 lg:mb-5 lg:z-30 ">
+                    This website,"Bay Htoke Course,"is designed to provide
+                    affordable and courses, unlike Udemy and other popular
+                    platforms where courses can be expensive.Their goal is to
+                    make learning more accessible and convenient.So learners can
+                    develop new skills without worrying about high costs.
+                  </p>
+                  <div className="flex flex-row flex-wrap ">
+                    <p className="font-primary text-gray-400">NextJs</p>
+                    <p className="font-primary text-gray-400 ml-3">
+                      TypeScript
+                    </p>
+                    <p className="font-primary text-gray-400 ml-3">SEO</p>
+                    <p className="font-primary text-gray-400 ml-3">Brevo</p>
+                  </div>
+                  <div className="flex flex-row mt-3 ">
+                    <p
+                      className="text-base text-white mr-2 cursor-pointer border-2 border-white rounded-lg pt-1 pr-2 pl-2"
+                      data-test-id="5"
+                      onClick={(e) => OpenModelFun(e.target.dataset)}
+                    >
+                      Gallary
+                    </p>
+                    <a href="https://github.com/kaungmyat-Rex/bayhtoke-course">
+                      <AiFillGithub className="text-blueEdit text-4xl" />
+                    </a>
+                    <div className="flex flex-row bg-[#ee1d52] rounded-lg justify-center items-center ml-2">
+                      <GrView color="#ee1d52" className="font-semibold ml-2" />
+                      <a href="https://www.bayhtokecourse.com/">
+                        <p className="font-secondry font-semibold pl-1 pr-2 ">
+                          demo
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
               <motion.div
                 className="flex flex-col justify-center items-center mt-8 lg:flex-row"
                 variants={scrollAnimation}

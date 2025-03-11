@@ -18,6 +18,11 @@ import ultimate3 from "../img/ultimateGy3.jpg";
 import ultimate4 from "../img/ultimateGy4.jpg";
 import ultimate5 from "../img/ultimateGy5.jpg";
 import ultimate6 from "../img/ultimateGy6.jpg";
+import bayHtoke1 from "../img/bayhtoke1.jpg";
+import bayHtoke2 from "../img/bayhtoke2.jpg";
+import bayHtoke3 from "../img/bayhtoke3.jpg";
+import bayHtoke4 from "../img/bayhtokemobile1.png";
+import bayHtoke5 from "../img/bayhtokemobile2.png";
 export const ProjectImgList = [
   {
     id: 1,
@@ -42,5 +47,9 @@ export const ProjectImgList = [
   {
     id: 4,
     img: [ultimate1, ultimate2, ultimate3, ultimate4, ultimate5, ultimate6],
+  },
+  {
+    id: 5,
+    img: [bayHtoke1, bayHtoke2, bayHtoke3, bayHtoke4, bayHtoke5],
   },
 ];
